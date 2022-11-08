@@ -1,0 +1,51 @@
+﻿  FlappyBird.cpp
+  Floor.cpp
+C:\Users\anand\Documents\GitHub\FlappyBird\Floor.cpp(24,49): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Game.cpp
+C:\Users\anand\Documents\GitHub\FlappyBird\Pipe.h(22,35): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\GameState.h(37,28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\Game.cpp(15,42): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\Game.cpp(16,43): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\Game.cpp(17,60): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\Game.cpp(17,52): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+  GameOver.cpp
+C:\Users\anand\Documents\GitHub\FlappyBird\Pipe.h(22,35): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\GameState.h(37,28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\GameOver.cpp(56,48): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\GameOver.cpp(57,44): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\GameOver.cpp(58,44): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\GameOver.cpp(80,44): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\GameOver.cpp(81,42): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\GameOver.cpp(82,41): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+  GameState.cpp
+C:\Users\anand\Documents\GitHub\FlappyBird\Pipe.h(22,35): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\GameState.h(37,28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\GameState.cpp(28,45): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\GameState.cpp(64,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\GameState.cpp(65,40): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\GameState.cpp(88,31): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\GameState.cpp(111,52): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\GameState.cpp(121,29): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\GameState.cpp(244,41): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  MainMenu.cpp
+C:\Users\anand\Documents\GitHub\FlappyBird\MainMenu.cpp(18,43): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\MainMenu.cpp(19,45): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\MainMenu.cpp(20,43): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\MainMenu.cpp(21,44): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+  Pipe.cpp
+C:\Users\anand\Documents\GitHub\FlappyBird\Pipe.h(22,35): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\GameState.h(37,28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  PipeMaintainer.cpp
+C:\Users\anand\Documents\GitHub\FlappyBird\Pipe.h(22,35): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\GameState.h(37,28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Scoreboard.cpp
+C:\Users\anand\Documents\GitHub\FlappyBird\Scoreboard.cpp(28,48): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\Scoreboard.cpp(29,49): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\Scoreboard.cpp(30,48): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\Scoreboard.cpp(31,45): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\Scoreboard.cpp(69,47): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\Scoreboard.cpp(70,48): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\Scoreboard.cpp(71,49): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\anand\Documents\GitHub\FlappyBird\Scoreboard.cpp(97,47): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+  Generating Code...
+  FlappyBird.vcxproj -> C:\Users\anand\Documents\GitHub\FlappyBird\Debug\FlappyBird.exe
