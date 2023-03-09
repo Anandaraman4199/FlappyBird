@@ -1,5 +1,6 @@
 #include "MainMenu.h"
-#include <iostream>
+
+// Constructor will initialize all the text and background elements and keeps the update and render function in loop.
 
 MainMenu::MainMenu(sf::RenderWindow* window)
 {
@@ -48,6 +49,7 @@ MainMenu::MainMenu(sf::RenderWindow* window)
 
 	this->floor = new Floor(true);
 
+	// This loop goes until the value of states static variable is 0. When the values changes, the mainmenu object will get deleted.
 
 	while (Game::states == 0)
 	{
@@ -57,38 +59,9 @@ MainMenu::MainMenu(sf::RenderWindow* window)
 	
 }
 
-void MainMenu::getInput()
-{
-	while (this->window->pollEvent(this->evnt))
-	{
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
-		{
-			this->option.openFromFile("option.wav");
-			this->option.play();
-			this->mOption--;
-			if(this->mOption < 0)
-			{
-				this->mOption = 2;
-			}
-		}
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
-		{
-			this->option.openFromFile("option.wav");
-			this->option.play();
-			this->mOption++;
-			if (this->mOption > 2)
-			{
-				this->mOption = 0;
-			}
-
-		}
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter))
-		{
-			Game::states = this->mOption + 1;
-		}
-	}
-
-}
+/* This function will be called everytime the player presses upand down keys in the main menu.
+   This will change the colour of all the fonts to white.
+*/
 
 void MainMenu::fontDef()
 {
@@ -96,6 +69,10 @@ void MainMenu::fontDef()
 	this->hScore.setFillColor(sf::Color::White);
 	this->quit.setFillColor(sf::Color::White);
 }
+
+/* This function will be called everytime the player presses upand down keys in the main menu after fontDef().
+   This will change the colour of the current option's font to red.
+*/
 
 void MainMenu::fontOption()
 {
@@ -112,12 +89,50 @@ void MainMenu::fontOption()
 
 }
 
+// This function is used to get the player input and change the values of the variables according to the player's input.
+
 void MainMenu::update()
 {
-	this->fontDef();
-	this->getInput();
-	this->fontOption();
+	while (this->window->pollEvent(this->evnt))
+	{
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
+		{
+			this->fontDef();
+			this->option.openFromFile("option.wav");
+			this->option.play();
+			this->mOption--;
+			if (this->mOption < 0)
+			{
+				this->mOption = 2;
+				this->fontOption();
+			}
+			this->fontOption();
+		}
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+		{
+			this->fontDef();
+			this->option.openFromFile("option.wav");
+			this->option.play();
+			this->mOption++;
+			if (this->mOption > 2)
+			{
+				this->mOption = 0;
+				this->fontOption();
+			}
+			this->fontOption();
+
+		}
+
+		// When the enter key is pressed the value of the states static variable will be changed and this will delete the main menu object.
+
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter))
+		{
+			Game::states = this->mOption + 1;
+		}
+	}
 }
+
+// This function is used to render all the fonts and background elements everyframe using sfml functions.
 
 void MainMenu::render()
 {
@@ -130,6 +145,10 @@ void MainMenu::render()
 	this->floor->render(this->window);
 	this->window->display();
 }
+
+/* When the value of the states static variable changes, the destructor will be called.
+   Destructor is used to delete the floor object everytime as it is initialized using heap allocation.
+*/
 
 MainMenu::~MainMenu()
 {

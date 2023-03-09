@@ -4,16 +4,21 @@
 #include "GameOver.h"
 #include "SFML/Audio.hpp"
 
+// This is the main Gameplay state. This contains the main game loop.
+
 class GameState
 {
+
 private:
 
 	sf::RenderWindow* window;
+	
 	sf::Texture background;
+	sf::RectangleShape bg, bg1;
 
 	sf::Music hit, die, wing,swoosh;
 
-	sf::RectangleShape bg,bg1;
+	
 	GameOver gameover;
 
 	sf::Event evnt;
